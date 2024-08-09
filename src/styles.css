@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+  }
+  
+body{
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    font-family: "Futura Book", monospace;
+}
+
+:root {
+    /* Primary Company Colors */
+    --orange: #F26925;
+    --white: #FFFFFF;
+    --dark-gray: #474C55;
+    /* Secondary Company Colors */
+    --light-blue: #72A4C2;
+    --yellow: #fcb414;
+    --light-gray: #b9b9ba;
+    --dark-white: rgb(219, 226, 226);
+    --brown: rgba(243, 156, 113, .40);
+    --black: rgba(0, 0, 0, 0.75);
+    --blue: #069;
+}
+@font-face {
+    font-family: "Futura Bold";
+    src: local("Futura Bold"), url(./assets/font/Futura-Std-Bold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Book";
+    src: local("Futura Book"), url(./assets/font/Futura-Std-Book.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Heavy";
+    src: local("Futura Heavy"), url(./assets/font/Futura-Std-Heavy.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Medium";
+    src: local("Futura Medium"), url(./assets/font/Futura-Std-Medium.otf) format("truetype");
+}
