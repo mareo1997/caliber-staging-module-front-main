@@ -1,0 +1,128 @@
+* {
+    color:  var(--light-gray);
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    object-fit: contain;
+}
+
+.left {
+    background-color: var(--dark-gray);
+    height: 100vh;
+    width: 20%;
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+}
+
+.title {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    display : block;
+    position : relative;
+    bottom: 50px;
+}
+
+.right {
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+    padding: 50px;
+    overflow: auto;
+}
+
+.left::after,
+.right::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logout-btn:focus{
+    border-color: var(--orange);
+    box-shadow: 0 0 0 0.2rem var(--brown);
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    /* animation: fadeInUp;
+     referring directly to the animation's @keyframe declaration
+    animation-duration: 3s;
+    don't forget to set a duration! */
+    position: fixed;
+    bottom: 20px;
+}
+
+.logout-btn:hover {
+    background-color: var(--light-gray);
+    text-decoration: underline;
+}
+.watermark{
+    margin: auto;
+    padding: auto;
+    opacity: 0.4;
+}
+
+.tagline{
+    color: var(--orange);
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-components{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Media Breakpoints*/
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .left {
+        width: 30%;
+        height: 100%;
+        padding: 10px;
+    }
+    .title {
+        font-size: 0.7rem;
+        letter-spacing: normal;
+    }
+
+    .right {
+        width: 70%;
+        height: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .logout-btn{
+        width: 100px;
+        height: 40px;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .title {
+        font-size: 1rem;
+        letter-spacing: normal;
+    }
+
+    .logout-btn{
+        width: 100px;
+        height: 40px;
+    }
+}
