@@ -1,0 +1,19 @@
+*{
+    padding :0;
+    margin : 0;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.nav > * {
+  margin-bottom: 10px;
+}
+
+.nav-link{
+    color: var(--white);
+}
+
+.nav-link:hover{
+    color: var(--light-gray);
+}

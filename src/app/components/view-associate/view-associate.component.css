@@ -1,0 +1,45 @@
+
+.associate {
+    display: grid;
+    min-height: 30px;
+    grid-template-columns: repeat(10,auto);
+    gap: 5px;
+    align-items: center;
+}
+
+
+
+.rev-btn {
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+   
+}
+
+.modal-content {
+    background-color: none !important;
+}
+
+.toggle-btn:focus{
+    border-color: var(--orange);
+    box-shadow: 0 0 0 0.2rem var(--brown);
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.toggle-btn:hover {
+    background-color: var(--light-gray);
+    text-decoration: underline;
+}
+
